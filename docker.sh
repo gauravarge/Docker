@@ -1,5 +1,5 @@
 #!/bin/bash
-ssh gaurav@192.168.0.108
+sshpass -f /root/docker/pass.txt /usr/bin/ssh -p 22 gaurav@192.168.0.108
 sudo su -
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
